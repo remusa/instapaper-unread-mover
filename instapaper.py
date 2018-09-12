@@ -1,7 +1,7 @@
 import csv
 import os
 
-# from pyinstapaper.instapaper import Instapaper, Folder
+from pyinstapaper.instapaper import Instapaper, Folder
 
 # https://pyinstapaper.readthedocs.io/en/latest/readme.html
 
@@ -24,8 +24,8 @@ INSTAPAPER_SECRET = os.environ['INSTAPAPER_SECRET']
 INSTAPAPER_LOGIN = os.environ['INSTAPAPER_LOGIN']
 INSTAPAPER_PASSWORD = os.environ['INSTAPAPER_PASSWORD']
 
-# instapaper = Instapaper(INSTAPAPER_KEY, INSTAPAPER_SECRET)
-# instapaper.login(INSTAPAPER_LOGIN, INSTAPAPER_PASSWORD)
+instapaper = Instapaper(INSTAPAPER_KEY, INSTAPAPER_SECRET)
+instapaper.login(INSTAPAPER_LOGIN, INSTAPAPER_PASSWORD)
 
 file_original = "instapaper-export.csv"
 filter_term = "fourhourworkweek"
@@ -68,8 +68,8 @@ def filter_unread():
 
 
 def instapaper():
-    # print(INSTAPAPER_KEY)
-    # print(INSTAPAPER_SECRET)
+    print(INSTAPAPER_KEY)
+    print(INSTAPAPER_SECRET)
     print(INSTAPAPER_LOGIN)
     print(INSTAPAPER_PASSWORD)
 
