@@ -1,6 +1,7 @@
 import csv
+import os
 
-from pyinstapaper.instapaper import Instapaper, Folder
+# from pyinstapaper.instapaper import Instapaper, Folder
 
 # https://pyinstapaper.readthedocs.io/en/latest/readme.html
 
@@ -18,10 +19,10 @@ scotthyoung
 youarenotsosmart
 """
 
-INSTAPAPER_KEY = 'MY_INSTAPAPER_API_KEY'
-INSTAPAPER_SECRET = 'MY_INSTAPAPER_API_SECRET'
-INSTAPAPER_LOGIN = 'rene.as.himself@gmail.com'
-INSTAPAPER_PASSWORD = 'gdCt3CP^#dX9%r$489Q9*@#d2'
+INSTAPAPER_KEY = os.environ['INSTAPAPER_KEY']
+INSTAPAPER_SECRET = os.environ['INSTAPAPER_SECRET']
+INSTAPAPER_LOGIN = os.environ['INSTAPAPER_LOGIN']
+INSTAPAPER_PASSWORD = os.environ['INSTAPAPER_PASSWORD']
 
 # instapaper = Instapaper(INSTAPAPER_KEY, INSTAPAPER_SECRET)
 # instapaper.login(INSTAPAPER_LOGIN, INSTAPAPER_PASSWORD)
@@ -67,7 +68,10 @@ def filter_unread():
 
 
 def instapaper():
-    print("test")
+    # print(INSTAPAPER_KEY)
+    # print(INSTAPAPER_SECRET)
+    print(INSTAPAPER_LOGIN)
+    print(INSTAPAPER_PASSWORD)
 
 
 def main():
