@@ -2,5 +2,7 @@
 
 .idea/
 venv/
+venv2/
 setup.md
 *.csv
+__pycache__/

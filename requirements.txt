@@ -1,2 +1,5 @@
-lxml==3.7.0
-pyinstapaper
+oauth2
+oauth
+requests
+# lxml==4.2.1
+# pyinstapaper
